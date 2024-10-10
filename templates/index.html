@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Dashboard</title>
+</head>
+<body>
+    <h1>Job Applications Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>User</th>
+            <th>Applications Count</th>
+        </tr>
+        {% for user, count in data %}
+        <tr>
+            <td>{{ user }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
